@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: teal;
+      color: white;
+      width: 70%;
+      font-size: 20px;
+      line-height: 1cm;
+      text-align: justify;
+      font-family: 'Red Rose', cursive;
+    }
+  </style>
+</head>
+<body>
+  <h1 class = 'text'>Lorem Ipsum</h1>
+  <h3 class = 'text'>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h3>
+  <p class = 'text paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas tellus in faucibus elementum. Nullam ut rhoncus justo, eget dignissim libero. Sed nec orci nec tortor feugiat ornare. Nulla condimentum sem et pretium suscipit. Fusce eget felis interdum nisi malesuada luctus sed non dolor. Nullam eget erat at eros tristique tristique non quis nisl. Nullam nec lacus dapibus, maximus eros in, sollicitudin enim. Praesent at velit tincidunt, feugiat massa tincidunt, sodales nisl. In pulvinar a nunc mattis sagittis. Morbi posuere ultrices lacus sit amet feugiat. Vestibulum vehicula, mauris vitae sodales interdum, metus turpis facilisis leo, et congue nunc odio a neque. Sed eu risus eget ligula blandit varius ac at nisi. In hac habitasse platea dictumst. Proin ultrices aliquet eros vitae volutpat. Pellentesque suscipit quam in nibh tristique, vel tincidunt ante posuere.</p>
+  <p class = 'text paragraph'>Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin efficitur lorem nec molestie convallis. Quisque et bibendum risus. Nam ornare ornare purus at rhoncus. Vivamus nec sem vel elit pulvinar condimentum elementum ac quam. Phasellus turpis mauris, commodo id pretium vel, dictum eget ante. Suspendisse egestas feugiat velit, non facilisis massa scelerisque ac. Mauris ultricies dui at turpis pharetra congue. Cras nec mi nunc. In hac habitasse platea dictumst. Donec rutrum sem semper dolor dictum tincidunt. Praesent euismod congue quam, malesuada luctus leo rhoncus non. Sed blandit, leo eget pulvinar bibendum, mauris dui scelerisque nisl, facilisis laoreet eros nibh ac metus. Nulla luctus accumsan sodales. Mauris finibus sit amet tortor non ornare. Maecenas in ullamcorper justo.</p>
+  <p class = 'text paragraph'>Praesent mauris ante, mattis eget fringilla at, condimentum at turpis. Morbi sit amet ligula ultrices, hendrerit risus at, ultricies purus. Curabitur molestie erat in tellus feugiat condimentum. Donec gravida sollicitudin ligula vel posuere. Maecenas imperdiet venenatis ante ac blandit. Mauris sollicitudin blandit mi et porta. Morbi at commodo urna.</p>
+  <h3 class = 'text'>Modificar cor do fundo da tela</h3>
+  <button id = 'backgroundBlack'>Preto</button>
+  <button id = 'backgroundBlue'>Azul</button>
+  <button id = 'backgroundGreenBlue'>Verde-azulado</button>
+  <h3 class = 'text'>Modificar cor do texto</h3>
+  <button id = 'colorBlack'>Preto</button>
+  <button id = 'colorRed'>Vermelho</button>
+  <button id = 'colorWhite'>White</button>
+  <h3 class = 'text'>Modificar tamanho da fonte</h3>
+  <button id = 'fontSize10'>10 px</button>
+  <button id = 'fontSize15'>15 px</button>
+  <button id = 'fontSize20'>20 px</button>
+  <h3 class = 'text'>Modificar espaçamento entre linhas do texto</h3>
+  <button id = 'lineHeight05'>0,5 cm</button>
+  <button id = 'lineHeight1'>1,0 cm</button>
+  <button id = 'lineHeight15'>1.5 cm</button>
+  <h3 class = 'text'>Modificar fonte</h3>
+  <button id = 'fontFamilyRoboto'>Roboto</button>
+  <button id = 'fontFamilyRedRose'>Red Rose</button>
+  <script>
+    let botaoBackgroundBlack = document.querySelector('#backgroundBlack');
+    botaoBackgroundBlack.addEventListener('click', function() {
+      document.body.style.backgroundColor = 'black';
+      localStorage.setItem('background', document.body.style.backgroundColor)
+    })
+    let botaoBackgroundBlue = document.querySelector('#backgroundBlue');
+    botaoBackgroundBlue.addEventListener('click', function(){
+      document.body.style.backgroundColor = 'blue';
+      localStorage.setItem('background', document.body.style.backgroundColor)
+    })
+    let botaoBackgroundGreenBlue = document.querySelector('#backgroundGreenBlue');
+    botaoBackgroundGreenBlue.addEventListener('click', function(){
+      document.body.style.backgroundColor = 'teal';
+      localStorage.setItem('background', document.body.style.backgroundColor)
+    })
+    let botaoColorBlack = document.querySelector('#colorBlack');
+    botaoColorBlack.addEventListener('click', function() {
+      document.body.style.color = 'black';
+    })
+    let botaoColorRed = document.querySelector('#colorRed');
+    botaoColorRed.addEventListener('click', function() {
+      document.body.style.color = 'red';
+    })
+    let botaoColorWhite = document.querySelector('#colorWhite');
+    botaoColorWhite.addEventListener('click', function() {
+      document.body.style.color = 'white';
+    })
+    let botaoFontSize10 = document.querySelector('#fontSize10');
+    botaoFontSize10.addEventListener('click', function() {
+      document.body.style.fontSize = '10px';
+    })
+    let botaoFontSize15 = document.querySelector('#fontSize15');
+    botaoFontSize15.addEventListener('click', function() {
+      document.body.style.fontSize = '15px';
+    })
+    let botaoFontSize20 = document.querySelector('#fontSize20');
+    botaoFontSize20.addEventListener('click', function() {
+      document.body.style.fontSize = '20px';
+    })
+    let botaoLineHeight05 = document.querySelector('#lineHeight05');
+    botaoLineHeight05.addEventListener('click', function() {
+      document.body.style.lineHeight = '0.5cm';
+    })
+    let botaoLineHeight1 = document.querySelector('#lineHeight1');
+    botaoLineHeight1.addEventListener('click', function() {
+      document.body.style.lineHeight = '1cm'
+    })
+    let botaoLineHeight15 = document.querySelector('#lineHeight15');
+    botaoLineHeight15.addEventListener('click', function() {
+      document.body.style.lineHeight = '1.5cm'
+    })
+    let botaoFontFamilyRoboto = document.querySelector('#fontFamilyRoboto');
+    botaoFontFamilyRoboto.addEventListener('click', function() {
+      document.body.style.fontFamily = "'Roboto', sans-serif";
+    })
+    let botaoFontFamilyRedRose = document.querySelector('#fontFamilyRedRose');
+    botaoFontFamilyRedRose.addEventListener('click', function() {
+      document.body.style.fontFamily = "'Red rose', sans-serif";
+    })
+    window.onload = function() {
+      document.body.style.backgroundColor = localStorage.getItem('background')
+    }
+  </script>
+</body>
+</html>

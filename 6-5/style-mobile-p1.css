@@ -1,0 +1,18 @@
+#centro {
+  width: 100%;
+}
+
+#topo {
+  background-color: #ff0;
+}
+
+#topo h1 {
+  color: red;
+}
+
+.colunas2 {
+  width: 100%;
+  float: none;
+  background-color: red;
+}
+

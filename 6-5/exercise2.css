@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+li, p {
+  font-size: 18px
+}
+
+p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .chapter-information {
+    display: flex;
+  }
+
+  .aside-two {
+    margin-left: 40px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}

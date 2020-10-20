@@ -1,0 +1,31 @@
+.infos {
+  border: 3px solid black;
+  border-radius: 7px;
+  padding: 8px;
+  display: flex;
+  background-color: white;
+  margin-bottom: 12px;
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+.allPokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-grow: 1;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+body {
+  background-color: gray;
+}
+
+.name {
+  font-weight: 700;
+}
